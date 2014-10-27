@@ -1,0 +1,23 @@
+<div id="login" class="row">
+    <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-0">
+    <div id="login-form">
+        <h4>Login</h4>
+        <form ng-submit="loginSubmit()" ng-model="loginData"  onsubmit="return false;">
+            <!--username-->
+            <div class="form-group">
+                <label for="name" class="sr-only">Usuario</label>
+                <input id="name" type="text" placeholder="Usuario" ng-model="loginData.name"/>
+            </div>
+            <!--password-->
+            <div class="form-group">
+                <label for="password" class="sr-only">Contraseña</label>
+                <input id="password" type="password" placeholder="Contraseña" ng-model="loginData.password"/>
+            </div>
+            <!--submit-->
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</div>
